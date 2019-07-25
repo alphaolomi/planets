@@ -1,8 +1,8 @@
-# Docker Node MongoDB Example
+# My Planets 
 
-> Simple example of a dockerized Node/Mongo app
+A minimal application to display planets in the solar system
 
-## Quick Start
+## Installation
 
 ```bash
 # Run in Docker
@@ -18,3 +18,10 @@ volumes: ['./:/usr/src/app']
 # To re-build
 docker-compose build
 ```
+
+## Author
+Alpha Olomi [http://alphaolomi.com](http://alphaolomi.com)
+
+
+## License
+MIT

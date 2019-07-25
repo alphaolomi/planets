@@ -1,13 +1,13 @@
 {
-  "name": "docker-node-mongo",
-  "version": "1.0.0",
+  "name": "my-planets",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["docker","node","mongo"],
+  "author": "Alpha Olomi",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
