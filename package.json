@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": ["docker","node","mongo"],
+  "keywords": [
+    "docker",
+    "node",
+    "mongo"
+  ],
   "author": "Alpha Olomi",
   "license": "ISC",
   "dependencies": {
