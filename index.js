@@ -6,13 +6,15 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // Connect to MongoDB
+// TODO add env for db coonection
+// Use 'mongodb://mongo:27017/planets',docker
 mongoose
     .connect(
-        'mongodb://mongo:27017/planets',
-        {useNewUrlParser: true}
+        'mongodb://localhost:27017/planets',
+        { useNewUrlParser: true }
     )
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
@@ -21,8 +23,8 @@ const Planet = require('./models/Planet');
 
 app.get('/', (req, res) => {
     Planet.find()
-        .then(items => res.render('index', {items}))
-        .catch(err => res.status(404).json({msg: 'No planets found.'}));
+        .then(items => res.render('index', { items }))
+        .catch(err => res.status(404).json({ msg: 'No planets found.' }));
 });
 
 app.post('/planet/add', (req, res) => {
