@@ -8,8 +8,17 @@ const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+const mongoose = require('mongoose');
+
 const apiRoutes = require('./routes/api');
 const webRoutes = require('./routes/web');
+
+const DB_URI = process.env.DB_URI || "mongodb://localhost:27017/mongouploads";
+
+mongoose
+  .connect(DB_URI, { useNewUrlParser: true })
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
 
 
 const app = express();
