@@ -3,7 +3,7 @@ const express = require("express");
 const registerController = require("../controllers/register");
 const loginController = require("../controllers/login");
 const homeController = require("../controllers/home");
-const storageController = require("../controllers/storage");
+const planetController = require("../controllers/planet");
 
 const router = express.Router();
 
@@ -30,28 +30,12 @@ router.get('/register', registerController.showRegistrationForm);
 
 
 // @route GET /home
-// @desc Loads form
-router.get('/home', storageController.index);
+// @desc Loads planets
+router.get('/planets', planetController.index);
 
 // @route POST /upload
-// @desc  Uploads file to DB
-router.post('/upload', storageController.store);
-
-// @route GET /files
-// @desc  Display all files in JSON
-router.get('/files', storageController.get_files);
-
-// @route GET /files/:filename
-// @desc  Display single file object
-router.get('/files/:filename', storageController.get_file);
-
-// @route GET /image/:filename
-// @desc Display Image
-router.get('/image/:filename', storageController.get_image);
-
-// @route DELETE /files/:id
-// @desc  Delete file
-router.delete('/files/:id', storageController.delete_file);
+// @desc  Store planet
+router.post('/planets', planetController.store);
 
 
 module.exports = router;

@@ -1,18 +1,18 @@
 {
-  "name": "my-planets",
-  "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "name": "planets",
+  "version": "0.0.2",
+  "main": "node ./bin/www",
+  "engines": {
+    "node": "10.x"
   },
-  "keywords": [
-    "docker",
-    "node",
-    "mongo"
-  ],
-  "author": "Alpha Olomi",
-  "license": "ISC",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "debug": "set DEBUG=* & nodemon ./bin/www",
+    "test": "node test.js"
+  },
+  "author": "Alpha Olomi <hello@alphaolomi.com>",
+  "license": "Apache License",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^2.6.2",
