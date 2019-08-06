@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include partials/header.ejs %>
+  <title>Planets | Home</title>
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row mt-5">
+      <h1>Solar System</h1>
+      <div class="col-md-12 m-auto">
+        <form action="./planets" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" aria-describedby="planetsHelp"
+              placeholder="Enter planet's name" />
+            <small id="planetsHelp" class="form-text text-muted">We'll always share your planet.</small>
+          </div>
+
+          <button type="submit" class="btn btn-dark">Add Planets</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <h1>Planets:</h1>
+      <div class="col-md-12">
+        <ul class="list-group">
+          <% items.forEach(function(item) { %>
+          <li class="list-group-item">
+            <%= item.name %>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
