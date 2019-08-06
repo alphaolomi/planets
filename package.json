@@ -15,8 +15,16 @@
   "license": "Apache License",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
-    "mongoose": "^5.6.6"
+    "express-session": "^1.16.2",
+    "http-errors": "^1.7.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.6.6",
+    "morgan": "^1.9.1",
+    "node-env-file": "^0.1.8",
+    "nodemon": "^1.19.1"
   }
 }
