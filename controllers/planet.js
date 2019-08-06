@@ -1,10 +1,10 @@
 
-const Planet = require('./models/Planet');
+const Planet = require('../models/Planet');
 
 async function index(req, res, next) {
   try {
     Planet.find()
-      .then(items => res.status(200).render('index', { items }))
+      .then(items => res.status(200).render('planets', { items }))
       .catch(err => res.status(404).json({ msg: 'No planets found.' }));
   } catch (error) {
     next(error);

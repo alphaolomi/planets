@@ -8,11 +8,13 @@
 </head>
 
 <body>
+
+
   <div class="container">
-    <div class="row">
+    <div class="row mt-5">
       <h1>Solar System</h1>
       <div class="col-md-12 m-auto">
-        <form action="/" method="post">
+        <form action="./planets" method="post">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" id="name" name="name" aria-describedby="planetsHelp"
@@ -25,8 +27,8 @@
       </div>
     </div>
 
-    <div class="row">
-      <h4>Planets:</h4>
+    <div class="row mt-5">
+      <h1>Planets:</h1>
       <div class="col-md-12">
         <ul class="list-group">
           <% items.forEach(function(item) { %>
