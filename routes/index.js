@@ -8,5 +8,4 @@ const router = express.Router();
 router.use(web);
 router.use(api);
 
-
 module.exports = router;

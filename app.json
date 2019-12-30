@@ -1,6 +1,6 @@
 {
   "name": "Planets",
-  "description": "",
+  "description": "A colection of Planets",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
   "image": "heroku/nodejs"
 }

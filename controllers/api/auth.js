@@ -1,9 +1,9 @@
 async function register(req, res) {
   try {
     const user = {
-      id: '1234',
-      email: 'user@example.com',
-      password: 'password'
+      id: "1234",
+      email: "user@example.com",
+      password: "password"
     };
     return res.status(200).json(user);
   } catch (error) {
@@ -18,9 +18,9 @@ async function register(req, res) {
 async function login(req, res) {
   try {
     const user = {
-      id: '1234',
-      email: 'user@example.com',
-      password: 'password'
+      id: "1234",
+      email: "user@example.com",
+      password: "password"
     };
     return res.status(200).json(user);
   } catch (error) {
