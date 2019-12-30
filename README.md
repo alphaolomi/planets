@@ -1,6 +1,6 @@
-# My Planets 
+# our-planets [![Build Status](https://travis-ci.com/alphaolomi/planets.svg?branch=master)](https://travis-ci.com/alphaolomi/planets)
 
-A minimal application to display planets in the solar system
+collection of planets and other heaven bodies out there
 
 ## Installation
 
@@ -20,8 +20,9 @@ docker-compose build
 ```
 
 ## Author
+
 Alpha Olomi [http://alphaolomi.com](http://alphaolomi.com)
 
-
 ## License
+
 MIT
