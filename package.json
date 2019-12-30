@@ -1,6 +1,13 @@
 {
   "name": "planets",
+  "description": "colletion of planets and other heaven bodies out there",
+  "author": "Alpha Olomi <hello@alphaolomi.com>",
+  "keywords": [
+    "planets",
+    "heaven bodies"
+  ],
   "version": "0.0.2",
+  "license": "MIT",
   "main": "node ./bin/www",
   "scripts": {
     "start": "node ./bin/www",
@@ -8,8 +15,6 @@
     "debug": "set DEBUG=* & nodemon ./bin/www",
     "test": "jest"
   },
-  "author": "Alpha Olomi <hello@alphaolomi.com>",
-  "license": "Apache License",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
@@ -24,10 +29,25 @@
     "node-env-file": "^0.1.8",
     "nodemon": "^2.0.2"
   },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
+  },
   "jest": {
     "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
       "/node_modules/"
     ]
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphaolomi/planets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alphaolomi/planets/issues"
+  },
+  "homepage": "https://github.com/alphaolomi/planets#readme"
 }
