@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "debug": "set DEBUG=* & nodemon ./bin/www",
-    "test": "node test.js"
+    "test": "jest"
   },
   "author": "Alpha Olomi <hello@alphaolomi.com>",
   "license": "Apache License",
@@ -23,5 +23,11 @@
     "morgan": "^1.9.1",
     "node-env-file": "^0.1.8",
     "nodemon": "^2.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
