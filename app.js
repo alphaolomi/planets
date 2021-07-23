@@ -16,7 +16,7 @@ const webRoutes = require("./routes/web");
 const DB_URI = process.env.DB_URI || "mongodb://localhost:27017/mongouploads";
 
 mongoose
-  .connect(DB_URI, { useNewUrlParser: true })
+  .connect(DB_URI, { useNewUrlParser: true , useUnifiedTopology: true })
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
